@@ -1,0 +1,426 @@
+trigger: none
+
+agents:
+  pool:
+    vmImage: 'ubuntu-latest'
+stages:
+  - stage: Development
+    jobs:
+      - job: Dev_Job
+        steps:
+          - script: echo "This is the Development stage."
+            displayName: 'Run Development Script'
+  - stage: Testing
+    jobs:
+      - job: Test_Job
+        steps:
+          - script: echo "This is the Testing stage."
+            displayName: 'Run Testing Script'
+  - stage: Production
+    jobs:
+      - job: Prod_Job
+        steps:
+          - script: echo "This is the Production stage."
+            displayName: 'Run Production Script'
+  - stage: Staging
+    jobs: 
+      - job: Staging_Job
+        steps:
+          - script: echo "This is the Staging stage."
+            displayName: 'Run Staging Script'
+  - stage: UAT
+    jobs: 
+      - job: UAT_Job
+        steps:
+          - script: echo "This is the UAT stage."
+            displayName: 'Run UAT Script'
+  - stage: Pre-Production
+    jobs: 
+      - job: PreProd_Job
+        steps:
+          - script: echo "This is the Pre-Production stage."
+            displayName: 'Run Pre-Production Script'
+  - stage: Hotfix
+    jobs: 
+      - job: Hotfix_Job
+        steps:
+          - script: echo "This is the Hotfix stage."
+            displayName: 'Run Hotfix Script'
+  - stage: Rollback
+    jobs: 
+      - job: Rollback_Job
+        steps:
+          - script: echo "This is the Rollback stage."
+            displayName: 'Run Rollback Script'
+  - stage: Maintenance
+    jobs: 
+      - job: Maintenance_Job
+        steps:
+          - script: echo "This is the Maintenance stage."
+            displayName: 'Run Maintenance Script'
+  - stage: Archive
+    jobs: 
+      - job: Archive_Job
+        steps:
+          - script: echo "This is the Archive stage."
+            displayName: 'Run Archive Script'
+  - stage: Cleanup
+    jobs: 
+      - job: Cleanup_Job
+        steps:
+          - script: echo "This is the Cleanup stage."
+            displayName: 'Run Cleanup Script'
+  - stage: Review
+    jobs: 
+      - job: Review_Job
+        steps:
+          - script: echo "This is the Review stage."
+            displayName: 'Run Review Script'
+  - stage: Deployment
+    jobs: 
+      - job: Deployment_Job
+        steps:
+          - script: echo "This is the Deployment stage."
+            displayName: 'Run Deployment Script'
+  - stage: Monitoring
+    jobs: 
+      - job: Monitoring_Job
+        steps:
+          - script: echo "This is the Monitoring stage."
+            displayName: 'Run Monitoring Script'
+  - stage: Reporting
+    jobs: 
+      - job: Reporting_Job
+        steps:
+          - script: echo "This is the Reporting stage."
+            displayName: 'Run Reporting Script'
+  - stage: Feedback
+    jobs: 
+      - job: Feedback_Job
+        steps:
+          - script: echo "This is the Feedback stage."
+            displayName: 'Run Feedback Script'
+  - stage: Optimization
+    jobs: 
+      - job: Optimization_Job
+        steps:
+          - script: echo "This is the Optimization stage."
+            displayName: 'Run Optimization Script'
+  - stage: Finalization
+    jobs: 
+      - job: Finalization_Job
+        steps:
+          - script: echo "This is the Finalization stage."
+            displayName: 'Run Finalization Script'
+  - stage: Documentation
+    jobs: 
+      - job: Documentation_Job
+        steps:
+          - script: echo "This is the Documentation stage."
+            displayName: 'Run Documentation Script'
+  - stage: Handover
+    jobs: 
+      - job: Handover_Job
+        steps:
+          - script: echo "This is the Handover stage."
+            displayName: 'Run Handover Script'
+  - stage: Retrospective
+    jobs: 
+      - job: Retrospective_Job
+        steps:
+          - script: echo "This is the Retrospective stage."
+            displayName: 'Run Retrospective Script'
+  - stage: Closure
+    jobs: 
+      - job: Closure_Job
+        steps:
+          - script: echo "This is the Closure stage."
+            displayName: 'Run Closure Script'
+  - stage: Evaluation
+    jobs: 
+      - job: Evaluation_Job
+        steps:
+          - script: echo "This is the Evaluation stage."
+            displayName: 'Run Evaluation Script'
+  - stage: Planning
+    jobs: 
+      - job: Planning_Job
+        steps:
+          - script: echo "This is the Planning stage."
+            displayName: 'Run Planning Script'
+  - stage: Design
+    jobs: 
+      - job: Design_Job
+        steps:
+          - script: echo "This is the Design stage."
+            displayName: 'Run Design Script'
+  - stage: Implementation
+    jobs: 
+      - job: Implementation_Job
+        steps:
+          - script: echo "This is the Implementation stage."
+            displayName: 'Run Implementation Script'
+  - stage: Review_and_Approval
+    jobs: 
+      - job: ReviewApproval_Job
+        steps:
+          - script: echo "This is the Review and Approval stage."
+            displayName: 'Run Review and Approval Script'
+  - stage: Deployment_to_Production
+    jobs: 
+      - job: DeployProd_Job
+        steps:
+          - script: echo "This is the Deployment to Production stage."
+            displayName: 'Run Deployment to Production Script'
+  - stage: Post_Deployment
+    jobs: 
+      - job: PostDeploy_Job
+        steps:
+          - script: echo "This is the Post Deployment stage."
+            displayName: 'Run Post Deployment Script'
+  - stage: Continuous_Improvement
+    jobs: 
+      - job: ContinuousImprovement_Job
+        steps:
+          - script: echo "This is the Continuous Improvement stage."
+            displayName: 'Run Continuous Improvement Script'
+  - stage: Scaling
+    jobs: 
+      - job: Scaling_Job
+        steps:
+          - script: echo "This is the Scaling stage."
+            displayName: 'Run Scaling Script'
+  - stage: Decommissioning
+    jobs: 
+      - job: Decommissioning_Job
+        steps:
+          - script: echo "This is the Decommissioning stage."
+            displayName: 'Run Decommissioning Script'
+  - stage: Audit
+    jobs: 
+      - job: Audit_Job
+        steps:
+          - script: echo "This is the Audit stage."
+            displayName: 'Run Audit Script' 
+  - stage: Compliance
+    jobs: 
+      - job: Compliance_Job
+        steps:
+          - script: echo "This is the Compliance stage."
+            displayName: 'Run Compliance Script'
+  - stage: Security
+    jobs: 
+      - job: Security_Job
+        steps:
+          - script: echo "This is the Security stage."
+            displayName: 'Run Security Script' 
+  - stage: Backup
+    jobs: 
+      - job: Backup_Job
+        steps:
+          - script: echo "This is the Backup stage."
+            displayName: 'Run Backup Script'
+  - stage: Recovery
+    jobs: 
+      - job: Recovery_Job
+        steps:
+          - script: echo "This is the Recovery stage."
+            displayName: 'Run Recovery Script'
+  - stage: Training
+    jobs: 
+      - job: Training_Job
+        steps:
+          - script: echo "This is the Training stage."
+            displayName: 'Run Training Script'
+  - stage: Support
+    jobs: 
+      - job: Support_Job
+        steps:
+          - script: echo "This is the Support stage."
+            displayName: 'Run Support Script'   
+  - stage: Enhancement
+    jobs: 
+      - job: Enhancement_Job
+        steps:
+          - script: echo "This is the Enhancement stage."
+            displayName: 'Run Enhancement Script'  
+  - stage: Innovation
+    jobs: 
+      - job: Innovation_Job
+        steps:
+          - script: echo "This is the Innovation stage."
+            displayName: 'Run Innovation Script'
+  - stage: Retirement
+    jobs:
+      - job: Retirement_Job
+        steps:
+          - script: echo "This is the Retirement stage."
+            displayName: 'Run Retirement Script'  
+  - stage: Celebration
+    jobs: 
+      - job: Celebration_Job
+        steps:
+          - script: echo "This is the Celebration stage."
+            displayName: 'Run Celebration Script' 
+  - stage: Reflection
+    jobs: 
+      - job: Reflection_Job
+        steps:
+          - script: echo "This is the Reflection stage."
+            displayName: 'Run Reflection Script'    
+  - stage: Next_Steps
+    jobs: 
+      - job: NextSteps_Job
+        steps:
+          - script: echo "This is the Next Steps stage."
+            displayName: 'Run Next Steps Script'
+  - stage: Legacy
+    jobs: 
+      - job: Legacy_Job
+        steps:
+          - script: echo "This is the Legacy stage."
+            displayName: 'Run Legacy Script'
+  - stage: Future_Planning
+    jobs: 
+      - job: FuturePlanning_Job
+        steps:
+          - script: echo "This is the Future Planning stage."
+            displayName: 'Run Future Planning Script'
+  - stage: Knowledge_Sharing
+    jobs: 
+      - job: KnowledgeSharing_Job
+        steps:
+          - script: echo "This is the Knowledge Sharing stage."
+            displayName: 'Run Knowledge Sharing Script'
+  - stage: Team_Building
+    jobs: 
+      - job: TeamBuilding_Job
+        steps:
+          - script: echo "This is the Team Building stage."
+            displayName: 'Run Team Building Script'
+  - stage: Celebration_of_Success
+    jobs: 
+      - job: CelebrationOfSuccess_Job
+        steps:
+          - script: echo "This is the Celebration of Success stage."
+            displayName: 'Run Celebration of Success Script'
+  - stage: Continuous_Learning
+    jobs: 
+      - job: ContinuousLearning_Job
+        steps:
+          - script: echo "This is the Continuous Learning stage."
+            displayName: 'Run Continuous Learning Script'
+  - stage: Future_Initiatives
+    jobs: 
+      - job: FutureInitiatives_Job
+        steps:
+          - script: echo "This is the Future Initiatives stage."
+            displayName: 'Run Future Initiatives Script'
+  - stage: Legacy_Systems
+    jobs: 
+      - job: LegacySystems_Job
+        steps:
+          - script: echo "This is the Legacy Systems stage."
+            displayName: 'Run Legacy Systems Script'
+  - stage: Vision_Setting
+    jobs: 
+      - job: VisionSetting_Job
+        steps:
+          - script: echo "This is the Vision Setting stage."
+            displayName: 'Run Vision Setting Script'
+  - stage: Strategic_Planning
+    jobs: 
+      - job: StrategicPlanning_Job
+        steps:
+          - script: echo "This is the Strategic Planning stage."
+            displayName: 'Run Strategic Planning Script'
+  - stage: Goal_Definition
+    jobs: 
+      - job: GoalDefinition_Job
+        steps:
+          - script: echo "This is the Goal Definition stage."
+            displayName: 'Run Goal Definition Script'
+  - stage: Roadmap_Creation
+    jobs: 
+      - job: RoadmapCreation_Job
+        steps:
+          - script: echo "This is the Roadmap Creation stage."
+            displayName: 'Run Roadmap Creation Script'      
+  - stage: Milestone_Setting
+    jobs: 
+      - job: MilestoneSetting_Job
+        steps:
+          - script: echo "This is the Milestone Setting stage."
+            displayName: 'Run Milestone Setting Script'
+  - stage: Resource_Allocation
+    jobs: 
+      - job: ResourceAllocation_Job
+        steps:
+          - script: echo "This is the Resource Allocation stage."
+            displayName: 'Run Resource Allocation Script'
+  - stage: Budget_Planning
+    jobs: 
+      - job: BudgetPlanning_Job
+        steps:
+          - script: echo "This is the Budget Planning stage."
+            displayName: 'Run Budget Planning Script'
+  - stage: Risk_Assessment
+    jobs: 
+      - job: RiskAssessment_Job
+        steps:
+          - script: echo "This is the Risk Assessment stage."
+            displayName: 'Run Risk Assessment Script'
+  - stage: Stakeholder_Engagement
+    jobs: 
+      - job: StakeholderEngagement_Job
+        steps:
+          - script: echo "This is the Stakeholder Engagement stage."
+            displayName: 'Run Stakeholder Engagement Script'
+  - stage: Communication_Strategy
+    jobs: 
+      - job: CommunicationStrategy_Job
+        steps:
+          - script: echo "This is the Communication Strategy stage."
+            displayName: 'Run Communication Strategy Script'
+  - stage: Change_Management
+    jobs: 
+      - job: ChangeManagement_Job
+        steps:
+          - script: echo "This is the Change Management stage."
+            displayName: 'Run Change Management Script'
+  - stage: Performance_Metrics
+    jobs: 
+      - job: PerformanceMetrics_Job
+        steps:
+          - script: echo "This is the Performance Metrics stage."
+            displayName: 'Run Performance Metrics Script'
+  - stage: Success_Criteria
+    jobs: 
+      - job: SuccessCriteria_Job
+        steps:
+          - script: echo "This is the Success Criteria stage."
+            displayName: 'Run Success Criteria Script'
+  - stage: Review_and_Adjustment
+    jobs: 
+      - job: ReviewAdjustment_Job
+        steps:
+          - script: echo "This is the Review and Adjustment stage."
+            displayName: 'Run Review and Adjustment Script' 
+  - stage: Final_Approval
+    jobs: 
+      - job: FinalApproval_Job
+        steps:
+          - script: echo "This is the Final Approval stage."
+            displayName: 'Run Final Approval Script'
+  - stage: Launch
+    jobs: 
+      - job: Launch_Job
+        steps:
+          - script: echo "This is the Launch stage."
+            displayName: 'Run Launch Script'  
+  - stage: Post_Launch_Review
+    jobs: 
+      - job: PostLaunchReview_Job
+        steps:
+          - script: echo "This is the Post Launch Review stage."
+            displayName: 'Run Post Launch Review Script'
